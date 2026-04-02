@@ -324,7 +324,7 @@ addLoadEvent(positionMessage);
 
 Here, the element has been positioned absolutely.
 
-![](./myImages/media/image1.png){width="4.0in" height="2.8816929133858267in"}
+![](./images/image001.png){width="4.0in" height="2.8816929133858267in"}
 
 Updating an element's position is also quite easy. You just need to run
 a function that updates a style property like top or left:
@@ -350,7 +350,7 @@ addLoadEvent(moveMessage);
 
 Now the element's position has been changed.
 
-![](./myImages/media/image2.png){width="4.0in" height="2.843597987751531in"}
+![](./images/image002.png){width="4.0in" height="2.843597987751531in"}
 
 The change in position is immediate. This isn't true animation.
 Animation involves changing an element's position over time.
@@ -1181,7 +1181,7 @@ Load <b>list.html</b> in a web browser to see the difference. The image has
 been clipped. Now only a portion of <b>topics.gif</b>---only the first 100
 pixels---is visible.
 
-![](./myImages/media/image9.png){width="4.0in" height="3.1860312773403323in"}
+![](./images/image009.png){width="4.0in" height="3.1860312773403323in"}
 
 The next part of the plan revolves around the actions of the user. We
 want to display a different portion of <b>topics.gif</b> in the
@@ -1354,7 +1354,7 @@ We can reference all three scripts from <b>list.html</b> by adding
 Load <b>list.html</b> in a web browser. Hover over one of the links in the
 list to see the slideshow in action.
 
-![](./myImages/media/image10.png){width="4.0in" height="3.1860312773403323in"}
+![](./images/image010.png){width="4.0in" height="3.1860312773403323in"}
 
 Depending on which link in the list you hover over, a different portion
 of the <b>topics.gif</b> image will slide into view.
@@ -1656,7 +1656,7 @@ function moveElement(elementID,final_x,final_y,interval) {
 Save these changes to <b>moveElement.js</b>. Reload <b>list.html</b> to see
 the difference.
 
-![](./myImages/media/image11.png){width="4.0in" height="3.1889949693788275in"}
+![](./images/image011.png){width="4.0in" height="3.1889949693788275in"}
 
 The animation now feels much smoother and snappier. When you first hover
 over a link, the image jumps quite a distance. As the image approaches
