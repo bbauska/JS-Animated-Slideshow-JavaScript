@@ -946,8 +946,7 @@ from <b>message.html</b> using <b>&lt;script&gt;</b> tags:
 Load <b>message.html</b> in a web browser to see the animation in action.
 The element moves horizontally across the screen.
 
-![](./myImages/media/image3.png){width="4.0in"
-height="2.164656605424322in"}
+![](./myImages/media/image3.png){width="4.0in" height="2.164656605424322in"}
 
 So far, so good. The <b>moveElement</b> function is working exactly like
 the <b>moveMessage</b> function. You abstracted the function so that you
@@ -956,9 +955,7 @@ could send it any arguments you like. By altering the values of
 animation. Altering the value of interval changes the speed of the
 animation:
 
-<pre>
-function moveElement(elementID,final_x,final_y,interval)
-</pre>
+<pre>function moveElement(elementID,final_x,final_y,interval)</pre>
 
 Update the last line of the <b>positionMessage</b> function in
 <b>positionMessage.js</b> so that these three values are changed
@@ -979,15 +976,12 @@ addLoadEvent(positionMessage);
 Refresh <b>message.html</b> in a web browser to see the change. The element
 now moves diagonally and more slowly.
 
-![](./myImages/media/image4.png){width="4.0in"
-height="2.8571423884514435in"}
+![](./myImages/media/image4.png){width="4.0in" height="2.8571423884514435in"}
 
 The other argument that you can change in <b>moveElement</b> is the value
 of <b>elementID</b>:
 
-<pre>
-function moveElement(elementID,final_x,final_y,interval)
-</pre>
+<pre>function moveElement(elementID,final_x,final_y,interval)</pre>
 
 Add a new element to <b>message.html</b>. Give it an id attribute of
 &quot;message2&quot;:
@@ -1035,8 +1029,7 @@ addLoadEvent(positionMessage);
 Reload <b>message.html</b> to see the new animation. Both elements move in
 different directions at the same time.
 
-![](./myImages/media/image5.png){width="4.0in"
-height="2.8571423884514435in"}
+![](./myImages/media/image5.png){width="4.0in" height="2.8571423884514435in"}
 
 The <b>moveElement</b> function is doing all the work in both cases. By
 simply changing the arguments that you send to the function, you can
@@ -1074,8 +1067,7 @@ Each link leads to a page covering a particular aspect of web design.
 The text within each link succinctly describes the content of the linked
 page.
 
-![](./myImages/media/image6.png){width="4.0in"
-height="2.267936351706037in"}
+![](./myImages/media/image6.png){width="4.0in" height="2.267936351706037in"}
 
 As it stands, this document is perfectly fine. That said, showing a
 visual clue about the destination documents would be a nice touch.
@@ -1107,8 +1099,7 @@ Here's what we'll do:
 
 I've made a composite image of the three previews plus one default view.
 
-![](./myImages/media/image7.png){width="4.0in"
-height="1.0103707349081366in"}
+![](./myImages/media/image7.png){width="4.0in" height="1.0103707349081366in"}
 
 The image is called topics.gif. It is 400 pixels wide and 100 pixels
 tall. We'll insert the topics.gif image into list.html, giving it an id
@@ -1137,8 +1128,7 @@ id=&quot;preview&quot; /&gt;
 
 The web page now contains the list of links and the composite image.
 
-![](./myImages/media/image8.png){width="4.0in"
-height="3.1860312773403323in"}
+![](./myImages/media/image8.png){width="4.0in" height="3.1860312773403323in"}
 
 Right now, the entire image is visible. We want only a 100-by-100 pixel
 portion to be visible at any one time. We can't do that with JavaScript,
@@ -1247,8 +1237,7 @@ Load <b>list.html</b> in a web browser to see the difference. The image has
 been clipped. Now only a portion of <b>topics.gif</b>---only the first 100
 pixels---is visible.
 
-![](./myImages/media/image9.png){width="4.0in"
-height="3.1860312773403323in"}
+![](./myImages/media/image9.png){width="4.0in" height="3.1860312773403323in"}
 
 The next part of the plan revolves around the actions of the user. We
 want to display a different portion of <b>topics.gif</b> in the
@@ -1394,26 +1383,26 @@ We can reference all three scripts from <b>list.html</b> by adding
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot; /&gt;
-&lt;title&gt;Web Design&lt;/title&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/layout.css&quot; media=&quot;screen&quot;
-/&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;title&gt;Web Design&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/layout.css&quot; media=&quot;screen&quot;
+  /&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;h1&gt;Web Design&lt;/h1&gt;
-&lt;p&gt;These are the things you should know.&lt;/p&gt;
-&lt;ol id=&quot;linklist&quot;&gt;
-&lt;li&gt;&lt;a href=&quot;structure.html&quot;&gt;Structure&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;presentation.html&quot;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;behavior.html&quot;&gt;Behavior&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;div id=&quot;slideshow&quot;&gt;
-&lt;img src=&quot;images/topics.gif&quot; alt=&quot;building blocks of web design&quot;
-id=&quot;preview&quot; /&gt;
-&lt;/div&gt;
-&lt;script src=&quot;scripts/addLoadEvent.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;scripts/moveElement.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;scripts/prepareSlideshow.js&quot;&gt;&lt;/script&gt;
+  &lt;h1&gt;Web Design&lt;/h1&gt;
+  &lt;p&gt;These are the things you should know.&lt;/p&gt;
+  &lt;ol id=&quot;linklist&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;structure.html&quot;&gt;Structure&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;presentation.html&quot;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;behavior.html&quot;&gt;Behavior&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;div id=&quot;slideshow&quot;&gt;
+    &lt;img src=&quot;images/topics.gif&quot; alt=&quot;building blocks of web design&quot;
+    id=&quot;preview&quot; /&gt;
+  &lt;/div&gt;
+  &lt;script src=&quot;scripts/addLoadEvent.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;scripts/moveElement.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;scripts/prepareSlideshow.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
@@ -1421,8 +1410,7 @@ id=&quot;preview&quot; /&gt;
 Load <b>list.html</b> in a web browser. Hover over one of the links in the
 list to see the slideshow in action.
 
-![](./myImages/media/image10.png){width="4.0in"
-height="3.1860312773403323in"}
+![](./myImages/media/image10.png){width="4.0in" height="3.1860312773403323in"}
 
 Depending on which link in the list you hover over, a different portion
 of the <b>topics.gif</b> image will slide into view.
@@ -1439,31 +1427,31 @@ abstracted the <b>moveMessage</b> function and turned it into the
 
 <pre>
 function moveElement(elementID,final_x,final_y,interval) {
-if (!document.getElementById) return false;
-if (!document.getElementById(elementID)) return false;
-var elem = document.getElementById(elementID);
-var xpos = parseInt(elem.style.left);
-var ypos = parseInt(elem.style.top);
-if (xpos == final_x && ypos == final_y) {
-return true;
-}
-if (xpos &lt; final_x) {
-xpos++;
-}
-if (xpos &gt; final_x) {
-xpos&#45;-;
-}
-if (ypos &lt; final_y) {
-ypos++;
-}
-if (ypos &gt; final_y) {
-ypos&#45;-;
-}
-elem.style.left = xpos + &quot;px&quot;;
-elem.style.top = ypos + &quot;px&quot;;
-var repeat =
-&quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;;
-movement = setTimeout(repeat,interval);
+  if (!document.getElementById) return false;
+  if (!document.getElementById(elementID)) return false;
+  var elem = document.getElementById(elementID);
+  var xpos = parseInt(elem.style.left);
+  var ypos = parseInt(elem.style.top);
+  if (xpos == final_x && ypos == final_y) {
+    return true;
+  }
+  if (xpos &lt; final_x) {
+    xpos++;
+  }
+  if (xpos &gt; final_x) {
+    xpos&#45;-;
+  }
+  if (ypos &lt; final_y) {
+    ypos++;
+  }
+  if (ypos &gt; final_y) {
+    ypos&#45;-;
+  }
+  elem.style.left = xpos + &quot;px&quot;;
+  elem.style.top = ypos + &quot;px&quot;;
+  var repeat =
+  &quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;;
+  movement = setTimeout(repeat,interval);
 }
 </pre>
 
@@ -1479,16 +1467,12 @@ As the user quickly moves from link to link, there is a backlog of
 events building up in the <b>setTimeout</b> queue. We can flush out this
 backlog by using <b>clearTimeout</b>:
 
-<pre>
-clearTimeout(movement);
-</pre>
+<pre>clearTimeout(movement);</pre>
 
 But if this statement is executed before movement has been set, we'll
 get an error. We can't use a local variable:
 
-<pre>
-var movement = setTimeout(repeat,interval);
-</pre>
+<pre>var movement = setTimeout(repeat,interval);</pre>
 
 If we do that, the <b>clearTimeout</b> statement won't work; the movement
 variable will no longer exist. We can't use a global variable.
@@ -1503,16 +1487,12 @@ Until now, we've used properties provided by the DOM:
 <b>element.firstChild</b>, <b>element.style</b>, and so on. You can also
 assign your own properties:
 
-<pre>
-element.property = value
-</pre>
+<pre>element.property = value</pre>
 
 If you wanted, you could create a property called <b>foo</b> with a value
 of <b>&quot;bar&quot;:</b>
 
-<pre>
-element.foo = &quot;bar&quot;;
-</pre>
+<pre>element.foo = &quot;bar&quot;;</pre>
 
 It's just like creating a variable. The difference is that the variable
 belongs just to that element.
@@ -1525,34 +1505,34 @@ That way, we can test for its existence and, if it exists, use
 
 <pre>
 function moveElement(elementID,final_x,final_y,interval) {
-if (!document.getElementById) return false;
-if (!document.getElementById(elementID)) return false;
-var elem = document.getElementById(elementID);
-if (elem.movement) {
-clearTimeout(elem.movement);
-}
-var xpos = parseInt(elem.style.left);
-var ypos = parseInt(elem.style.top);
-if (xpos == final_x && ypos == final_y) {
-return true;
-}
-if (xpos &lt; final_x) {
-xpos++;
-}
-if (xpos &gt; final_x) {
-xpos&#45;-;
-}
-if (ypos &lt; final_y) {
-ypos++;
-}
-if (ypos &gt; final_y) {
-ypos&#45;-;
-}
-elem.style.left = xpos + &quot;px&quot;;
-elem.style.top = ypos + &quot;px&quot;;
-var repeat =
-&quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;;
-elem.movement = setTimeout(repeat,interval);
+  if (!document.getElementById) return false;
+  if (!document.getElementById(elementID)) return false;
+  var elem = document.getElementById(elementID);
+  if (elem.movement) {
+    clearTimeout(elem.movement);
+  }
+  var xpos = parseInt(elem.style.left);
+  var ypos = parseInt(elem.style.top);
+  if (xpos == final_x && ypos == final_y) {
+    return true;
+  }
+  if (xpos &lt; final_x) {
+    xpos++;
+  }
+  if (xpos &gt; final_x) {
+    xpos&#45;-;
+  }
+  if (ypos &lt; final_y) {
+    ypos++;
+  }
+  if (ypos &gt; final_y) {
+    ypos&#45;-;
+  }
+  elem.style.left = xpos + &quot;px&quot;;
+  elem.style.top = ypos + &quot;px&quot;;
+  var repeat =
+  &quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;;
+  elem.movement = setTimeout(repeat,interval);
 }
 </pre>
 
@@ -1579,7 +1559,7 @@ Take a look at this simple bit of code in <b>moveElement.js</b>:
 
 <pre>
 if (xpos &lt; final_x) {
-xpos++;
+  xpos++;
 }
 </pre>
 
@@ -1599,9 +1579,7 @@ destination. If xpos is less than <b>final_x</b>, we want to know by how
 much. We can find out by subtracting <b>xpos</b>, the current left
 position, from <b>final_x</b>, the desired left position:
 
-<pre>
-dist = final_x - xpos;
-</pre>
+<pre>dist = final_x - xpos;</pre>
 
 That's the distance that the element needs to travel. We'll move the
 element one-tenth of this distance.
@@ -1628,7 +1606,7 @@ Using the <b>ceil</b> property of the <b>Math</b> object, you can <b>round</b> u
 the value of the variable dist. The <b>ceil</b> property has the following
 syntax:
 
-Math.ceil(number)
+<pre>Math.ceil(number)</pre>
 
 This will <b>round</b> up any floating-point number to the nearest integer.
 There is a corresponding <b>floor</b> property that will <b>round</b> any
@@ -1671,13 +1649,14 @@ xpos = xpos - dist;
 
 The same logic applies for <b>ypos</b> and <b>final_y:</b>
 
+<pre>
 if (ypos &lt; final_y) {
-dist = Math.ceil((final_y - ypos)/10);
-ypos = ypos + dist;
+  dist = Math.ceil((final_y - ypos)/10);
+  ypos = ypos + dist;
 }
 if (ypos &gt; final_y) {
-dist = Math.ceil((ypos - final_y)/10);
-ypos = ypos - dist;
+  dist = Math.ceil((ypos - final_y)/10);
+  ypos = ypos - dist;
 }
 </pre>
 
@@ -1694,47 +1673,46 @@ The updated <b>moveElement</b> function looks like this:
 
 <pre>
 function moveElement(elementID,final_x,final_y,interval) {
-if (!document.getElementById) return false;
-if (!document.getElementById(elementID)) return false;
-var elem = document.getElementById(elementID);
-if (elem.movement) {
-clearTimeout(elem.movement);
-}
-var xpos = parseInt(elem.style.left);
-var ypos = parseInt(elem.style.top);
-var dist = 0;
-if (xpos == final_x && ypos == final_y) {
-return true;
-}
-if (xpos &lt; final_x) {
-dist = Math.ceil((final_x - xpos)/10);
-xpos = xpos + dist;
-}
-if (xpos &gt; final_x) {
-dist = Math.ceil((xpos - final_x)/10);
-xpos = xpos - dist;
-}
-if (ypos &lt; final_y) {
-dist = Math.ceil((final_y - ypos)/10);
-ypos = ypos + dist;
-}
-if (ypos &gt; final_y) {
-dist = Math.ceil((ypos - final_y)/10);
-ypos = ypos - dist;
-}
-elem.style.left = xpos + &quot;px&quot;;
-elem.style.top = ypos + &quot;px&quot;;
-var repeat =
-&quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;;
-elem.movement = setTimeout(repeat,interval);
+  if (!document.getElementById) return false;
+  if (!document.getElementById(elementID)) return false;
+  var elem = document.getElementById(elementID);
+  if (elem.movement) {
+    clearTimeout(elem.movement);
+  }
+  var xpos = parseInt(elem.style.left);
+  var ypos = parseInt(elem.style.top);
+  var dist = 0;
+  if (xpos == final_x && ypos == final_y) {
+    return true;
+  }
+  if (xpos &lt; final_x) {
+    dist = Math.ceil((final_x - xpos)/10);
+    xpos = xpos + dist;
+  }
+  if (xpos &gt; final_x) {
+    dist = Math.ceil((xpos - final_x)/10);
+    xpos = xpos - dist;
+  }
+  if (ypos &lt; final_y) {
+    dist = Math.ceil((final_y - ypos)/10);
+    ypos = ypos + dist;
+  }
+  if (ypos &gt; final_y) {
+    dist = Math.ceil((ypos - final_y)/10);
+    ypos = ypos - dist;
+  }
+  elem.style.left = xpos + &quot;px&quot;;
+  elem.style.top = ypos + &quot;px&quot;;
+  var repeat =
+  &quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;;
+  elem.movement = setTimeout(repeat,interval);
 }
 </pre>
 
 Save these changes to <b>moveElement.js</b>. Reload <b>list.html</b> to see
 the difference.
 
-![](./myImages/media/image11.png){width="4.0in"
-height="3.1889949693788275in"}
+![](./myImages/media/image11.png){width="4.0in" height="3.1889949693788275in"}
 
 The animation now feels much smoother and snappier. When you first hover
 over a link, the image jumps quite a distance. As the image approaches
@@ -1764,7 +1742,7 @@ options. We could simply exit the function there and then:
 
 <pre>
 if (!elem.style.left &#124;&#124; !elem.style.top) {
-return false;
+  return false;
 }
 </pre>
 
@@ -1777,10 +1755,10 @@ give them a default value of &quot;0px&quot;:
 
 <pre>
 if (!elem.style.left) {
-elem.style.left = &quot;0px&quot;;
+  elem.style.left = &quot;0px&quot;;
 }
 if (!elem.style.top) {
-elem.style.top = &quot;0px&quot;;
+  elem.style.top = &quot;0px&quot;;
 }
 </pre>
 
@@ -1788,45 +1766,45 @@ The <b>moveElement</b> function now looks like this:
 
 <pre>
 function moveElement(elementID,final_x,final_y,interval) {
-if (!document.getElementById) return false;
-if (!document.getElementById(elementID)) return false;
-var elem = document.getElementById(elementID);
-if (elem.movement) {
-clearTimeout(elem.movement);
-}
-if (!elem.style.left) {
-elem.style.left = &quot;0px&quot;;
-}
-if (!elem.style.top) {
-elem.style.top = &quot;0px&quot;;
-}
-var xpos = parseInt(elem.style.left);
-var ypos = parseInt(elem.style.top);
-var dist = 0;
-if (xpos == final_x && ypos == final_y) {
-return true;
-}
-if (xpos &lt; final_x) {
-dist = Math.ceil((final_x - xpos)/10);
-xpos = xpos + dist;
-}
-if (xpos &gt; final_x) {
-dist = Math.ceil((xpos - final_x)/10);
-xpos = xpos - dist;
-}
-if (ypos &lt; final_y) {
-dist = Math.ceil((final_y - ypos)/10);
-ypos = ypos + dist;
-}
-if (ypos &gt; final_y) {
-dist = Math.ceil((ypos - final_y)/10);
-ypos = ypos - dist;
-}
-elem.style.left = xpos + &quot;px&quot;;
-elem.style.top = ypos + &quot;px&quot;;
-var repeat =
-&quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;;
-elem.movement = setTimeout(repeat,interval);
+  if (!document.getElementById) return false;
+  if (!document.getElementById(elementID)) return false;
+  var elem = document.getElementById(elementID);
+  if (elem.movement) {
+    clearTimeout(elem.movement);
+  }
+  if (!elem.style.left) {
+    elem.style.left = &quot;0px&quot;;
+  }
+  if (!elem.style.top) {
+    elem.style.top = &quot;0px&quot;;
+  }
+  var xpos = parseInt(elem.style.left);
+  var ypos = parseInt(elem.style.top);
+  var dist = 0;
+  if (xpos == final_x && ypos == final_y) {
+    return true;
+  }
+  if (xpos &lt; final_x) {
+    dist = Math.ceil((final_x - xpos)/10);
+    xpos = xpos + dist;
+  }
+  if (xpos &gt; final_x) {
+    dist = Math.ceil((xpos - final_x)/10);
+    xpos = xpos - dist;
+  }
+  if (ypos &lt; final_y) {
+    dist = Math.ceil((final_y - ypos)/10);
+    ypos = ypos + dist;
+  }
+  if (ypos &gt; final_y) {
+    dist = Math.ceil((ypos - final_y)/10);
+    ypos = ypos - dist;
+  }
+  elem.style.left = xpos + &quot;px&quot;;
+  elem.style.top = ypos + &quot;px&quot;;
+  var repeat =
+  &quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;;
+  elem.movement = setTimeout(repeat,interval);
 }
 </pre>
 
@@ -1877,9 +1855,7 @@ preview.setAttribute(&quot;id&quot;,&quot;preview&quot;);
 
 Place the <b>img</b> inside the <b>div</b>:
 
-<pre>
-slideshow.appendChild(preview);
-</pre>
+<pre>slideshow.appendChild(preview);</pre>
 
 Finally, we want these newly created elements to appear directly after
 the list of links. For this, we'll use the <b>insertAfter</b> function from
@@ -1894,63 +1870,61 @@ The finished <b>prepareSlideshow</b> function looks like this:
 
 <pre>
 function prepareSlideshow() {
-// Make sure the browser understands the DOM methods
-if (!document.getElementsByTagName) return false;
-if (!document.getElementById) return false;
-// Make sure the elements exist
-if (!document.getElementById(&quot;linklist&quot;)) return false;
-var slideshow = document.createElement(&quot;div&quot;);
-slideshow.setAttribute(&quot;id&quot;,&quot;slideshow&quot;);
-var preview = document.createElement(&quot;img&quot;);
-preview.setAttribute(&quot;src&quot;,&quot;images/topics.gif&quot;);
-preview.setAttribute(&quot;alt&quot;,&quot;building blocks of web design&quot;);
-preview.setAttribute(&quot;id&quot;,&quot;preview&quot;);
-slideshow.appendChild(preview);
-var list = document.getElementById(&quot;linklist&quot;);
-insertAfter(slideshow,list);
-// Get all the links in the list
-var links = list.getElementsByTagName(&quot;a&quot;);
-// Attach the animation behavior to the mouseover event
-links&lbrack;0&rbrack;.onmouseover = function() {
-moveElement(&quot;preview&quot;,-100,0,10);
-}
-links&lbrack;1&rbrack;.onmouseover = function() {
-moveElement(&quot;preview&quot;,-200,0,10);
-}
-links&lbrack;2&rbrack;.onmouseover = function() {
-moveElement(&quot;preview&quot;,-300,0,10);
-}
+  // Make sure the browser understands the DOM methods
+  if (!document.getElementsByTagName) return false;
+  if (!document.getElementById) return false;
+  // Make sure the elements exist
+  if (!document.getElementById(&quot;linklist&quot;)) return false;
+  var slideshow = document.createElement(&quot;div&quot;);
+  slideshow.setAttribute(&quot;id&quot;,&quot;slideshow&quot;);
+  var preview = document.createElement(&quot;img&quot;);
+  preview.setAttribute(&quot;src&quot;,&quot;images/topics.gif&quot;);
+  preview.setAttribute(&quot;alt&quot;,&quot;building blocks of web design&quot;);
+  preview.setAttribute(&quot;id&quot;,&quot;preview&quot;);
+  slideshow.appendChild(preview);
+  var list = document.getElementById(&quot;linklist&quot;);
+  insertAfter(slideshow,list);
+  // Get all the links in the list
+  var links = list.getElementsByTagName(&quot;a&quot;);
+  // Attach the animation behavior to the mouseover event
+  links&lbrack;0&rbrack;.onmouseover = function() {
+    moveElement(&quot;preview&quot;,-100,0,10);
+  }
+  links&lbrack;1&rbrack;.onmouseover = function() {
+    moveElement(&quot;preview&quot;,-200,0,10);
+  }
+  links&lbrack;2&rbrack;.onmouseover = function() {
+    moveElement(&quot;preview&quot;,-300,0,10);
+  }
 }
 addLoadEvent(prepareSlideshow);
 </pre>
 
 Now we need to make some changes to list.html. We can remove the markup
 with the &quot;slideshow&quot; div and the &quot;preview&quot; image. We also need to
-include one more set of 
-&lt;script&gt; tags to reference the insertAfter.js
-file.
+include one more set of &lt;script&gt; tags to reference the insertAfter.js file.
 
 <pre>
 &lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
 &lt;head&gt;
-&lt;meta charset=&quot;utf-8&quot; /&gt;
-&lt;title&gt;Web Design&lt;/title&gt;
-&lt;link rel=&quot;stylesheet&quot; href=&quot;styles/layout.css&quot; media=&quot;screen&quot;
-/&gt;
+  &lt;meta charset=&quot;utf-8&quot; /&gt;
+  &lt;title&gt;Web Design&lt;/title&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;styles/layout.css&quot; media=&quot;screen&quot;
+  /&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;h1&gt;Web Design&lt;/h1&gt;
-&lt;p&gt;These are the things you should know.&lt;/p&gt;
-&lt;ol id=&quot;linklist&quot;&gt;
-&lt;li&gt;&lt;a href=&quot;structure.html&quot;&gt;Structure&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;presentation.html&quot;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;behavior.html&quot;&gt;Behavior&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;script src=&quot;scripts/addLoadEvent.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;scripts/insertAfter.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;scripts/moveElement.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;scripts/prepareSlideshow.js&quot;&gt;&lt;/script&gt;
+  &lt;h1&gt;Web Design&lt;/h1&gt;
+  &lt;p&gt;These are the things you should know.&lt;/p&gt;
+  &lt;ol id=&quot;linklist&quot;&gt;
+    &lt;li&gt;&lt;a href=&quot;structure.html&quot;&gt;Structure&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;presentation.html&quot;&gt;Presentation&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;behavior.html&quot;&gt;Behavior&lt;/a&gt;&lt;/li&gt;
+  &lt;/ol&gt;
+  &lt;script src=&quot;scripts/addLoadEvent.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;scripts/insertAfter.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;scripts/moveElement.js&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;scripts/prepareSlideshow.js&quot;&gt;&lt;/script&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </pre>
@@ -1960,33 +1934,31 @@ and place it in the <b>scripts</b> folder:
 
 <pre>
 function insertAfter(newElement,targetElement) {
-var parent = targetElement.parentNode;
-if (parent.lastChild == targetElement) {
-parent.appendChild(newElement);
-} else {
-parent.insertBefore(newElement,targetElement.nextSibling);
-}
+  var parent = targetElement.parentNode;
+  if (parent.lastChild == targetElement) {
+    parent.appendChild(newElement);
+  } else {
+    parent.insertBefore(newElement,targetElement.nextSibling);
+  }
 }
 </pre>
 
 The other file we need to update is the style sheet, <b>layout.css</b>.
 Remove this line from <b>prepareSlideshow.js</b>:
 
-<pre>
-preview.style.position = &quot;absolute&quot;;
-</pre>
+<pre>preview.style.position = &quot;absolute&quot;;</pre>
 
 Now place that declaration in the style sheet, where it belongs:
 
 <pre>
 #slideshow {
-width: 100px;
-height: 100px;
-position: relative;
-overflow: hidden;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
 }
 #preview {
-position: absolute;
+  position: absolute;
 }
 </pre>
 
