@@ -1,39 +1,44 @@
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h1>JS-Animated-Slideshow</h1>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h6>by Brian Bauska &#64;cellardoors</h6>
 <h5>About this Course</h5>
 
 <h2>Table of Contents</h2>
 
-<h2>Module 1: Introduction to JavaScript Animated Slideshow
+<h2>Module 1: Introduction to JavaScript Animated Slideshow</h2>
 
 <h2>Module 2: DOM Manipulation and Event Handling</h2>
 <h6>13 lessons, 3 readings</h6>
 
-1.  **[About the
-    DOM](https://www.coursera.org/lecture/javascript-for-web-development/about-this-lesson-IT7ub)
-    (0:46)**
-
-2.  Accessing DOM elements with JavaScript
-
-    1.  DOM Manipulation
-
-3.  Handling errors and exceptions
-
-    1.  Advanced DOM Manipulation
+<ol>
+  <li><b><a href="https://www.coursera.org/lecture/javascript-for-web-development/about-this-lesson-IT7ub" 
+  target="_blank" rel="noopener noreferrer">
+    About the DOM</a> (0:46)</b></li>
+  <li><b>Accessing DOM elements with JavaScript</b>
+    <ul>
+      <li>DOM Manipulation</li>
+	</ul>
+  </li>
+  <li>Handling errors and exceptions
+    <ul>
+	  <li>Advanced DOM Manipulation</li>
+	</ul>
+  </li>
+</ol>
 
 <h2>Module 3:</h2>
 
 This module is designed to provide learners with a comprehensive
 understanding of advanced JavaScript techniques and the jQuery library.
 
-<h3>1.1.1. Syllabus</h3>
+<h2>1.1.1. Syllabus</h2>
 
-<h2>Module 1: Introduction to JavaScript Animated Slideshow</h2>
+<h3>Module 1: Introduction to JavaScript Animated Slideshow</h3>
 
-<h2>Module 2: DOM Manipulation and Event Handling</h2>
+<h3>Module 2: DOM Manipulation and Event Handling</h3>
 
-<h2>Module 3: Advanced JavaScript Techniques and jQuery</h2>
+<h3>Module 3: Advanced JavaScript Techniques and jQuery</h3>
 
 <h3>Syllabus</h3>
 
@@ -43,8 +48,8 @@ understanding of advanced JavaScript techniques and the jQuery library.
 
 Daniel Krieglstein, Adjunct Instructor, Illinois Institute of Technology
 
-[Daniel, Krieglstein&#124; Illinois Institute of Technology
-(iit.edu)](https://www.iit.edu/directory/people/daniel-krieglstein)
+<a href="https://www.iit.edu/directory/people/daniel-krieglstein" target="_blank" rel="noopener noreferrer">
+Daniel, Krieglstein&#124; Illinois Institute of Technology (iit.edu)</a>
 
 **Course Description**
 
