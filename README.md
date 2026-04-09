@@ -3,13 +3,13 @@
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h6>by Brian Bauska &#64;cellardoors</h6>
 <h5>About this Course</h5>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Table of Contents</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 1: Introduction to JavaScript Animated Slideshow</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 2: DOM Manipulation and Event Handling</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h6>13 lessons, 3 readings</h6>
 
 <ol>
@@ -27,14 +27,14 @@
 	</ul>
   </li>
 </ol>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 3:</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This module is designed to provide learners with a comprehensive
 understanding of advanced JavaScript techniques and the jQuery library.</p>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>1.1.1. Syllabus</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h3>Module 1: Introduction to JavaScript Animated Slideshow</h3>
 
 <h3>Module 2: DOM Manipulation and Event Handling</h3>
@@ -101,8 +101,9 @@ that some resources may open in a new tab.</p>
 
 <p>The course consists of 8 modules that focus on the following key areas:</p>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 1: Internet Structures and an Introduction to HTML</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Key concepts</h4>
 <ul>
   <li>History of the Web</li>
@@ -123,8 +124,9 @@ that some resources may open in a new tab.</p>
   <li><a href="https://web.dev/articles/howbrowserswork">How Browsers Work</a></li>
 </ul>
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 2: HTML</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Key concepts</h4>
 <ul>
   <li>HTML Elements (Inline vs. Box), and HTML Lists</li>
@@ -132,82 +134,68 @@ that some resources may open in a new tab.</p>
   <li>HTML Links and Images</li>
   <li>HTML Tables</li>
 </ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 3: HTML Forms</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Key concepts</h4>
-
--   Website Navigation (Simple HTML)
-
--   HTML Forms
-
--   Page Layout: Resumes
-
+<ul>
+  <li>Website Navigation (Simple HTML)</li>
+  <li>HTML Forms</li>
+  <li>Page Layout: Resumes</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 4: Introduction to CSS</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Key concepts</h4>
-
--   How CSS Talks to HTML
-
--   CSS Declarations
-
--   The Box Model
-
--   Box Sizing
-
--   CSS Resets
-
+<ul>
+  <li>How CSS Talks to HTML</li>
+  <li>CSS Declarations</li>
+  <li>The Box Model</li>
+  <li>Box Sizing</li>
+  <li>CSS Resets</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 5: CSS Floats and Positions</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Key concepts</h4>
-
--   CSS Fonts
-
--   CSS Floats
-
--   CSS Positions
-
--   Horizontal Navigation
-
--   Centered Navigation
-
+<ul>
+  <li>CSS Fonts</li>
+  <li>CSS Floats</li>
+  <li>CSS Positions</li>
+  <li>Horizontal Navigation</li>
+  <li>Centered Navigation</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 6: Website Layouts and Design</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Key concepts</h4>
-
--   Standard Website Layouts
-
--   Responsive Design
-
--   CSS Transitions, Transformations, and Animations
-
--   CSS Pseudo-selectors
-
--   Full-site Demonstration
-
+<ul>
+  <li>Standard Website Layouts</li>
+  <li>Responsive Design</li>
+  <li>CSS Transitions, Transformations, and Animations</li>
+  <li>CSS Pseudo-selectors</li>
+  <li>Full-site Demonstration</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 7: Introduction to Javascript</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Key concepts</h4>
-
--   The Basics of JavaScript (JS)
-
--   JS Language Features and Syntax
-
--   Google Maps API (Application Programming Interface)
-
--   JavaScript Objectives, Event Handling, and DOM (Document Object
-    Model)
-
+<ul>
+  <li>The Basics of JavaScript (JS)</li>
+  <li>JS Language Features and Syntax</li>
+  <li>Google Maps API (Application Programming Interface)</li>
+  <li>JavaScript Objectives, Event Handling, and DOM (Document Object Model)</li>
+</ul>
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h2>Module 8: JQuery and Frameworks</h2>
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4>Key concepts</h4>
-
--   How-To: JavaScript Grab Objects and Change HTML
-
--   JQuery Intro and Box Sliders
-
--   Responsive Videos
-
--   What This All Means for Using Website Frameworks
+<ul>
+  <li>How-To: JavaScript Grab Objects and Change HTML</li>
+  <li>jQuery Intro and Box Sliders</li>
+  <li>Responsive Videos</li>
+  <li>What This All Means for Using Website Frameworks</li>
+</ul>
 
 End syllabus. Begin Course:
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -299,13 +287,13 @@ function positionMessage() {
 }
 </pre>
 
-Calling the <b>positionMessage</b> function when the page loads will
+<p>Calling the <span>positionMessage</span> function when the page loads will
 position the paragraph 50 pixels from the left and 100 pixels from the
-top of the browser window:
+top of the browser window:</p>
 
 <pre>window.onload = positionMessage;</pre>
 
-Better yet, use the <b>addLoadEvent</b> function:
+<p>Better yet, use the <span>addLoadEvent</span> function:</p>
 
 <pre>
 function addLoadEvent(func) {
@@ -338,10 +326,10 @@ function moveMessage() {
 }
 </pre>
 
-But how do you activate that function? If you execute <b>moveMessage</b>
+But how do you activate that function? If you execute <span>moveMessage</span>
 when the page loads, the element's position will be updated
 instantaneously. The original positioning, as specified by
-<b>positionMessage</b>, will be overridden instantly:
+<span>positionMessage</span>, will be overridden instantly:
 
 <pre>
 addLoadEvent(positionMessage);
@@ -362,7 +350,7 @@ look at next.
 
 <h4>Time</h4>
 
-The JavaScript function <b>setTimeout</b> allows you to execute a function
+The JavaScript function <span>setTimeout</span> allows you to execute a function
 after a specified amount of time has elapsed. It takes two arguments.
 The first argument is a string containing the function you want to
 execute. The second argument is the number of milliseconds that will
@@ -377,12 +365,12 @@ variable:
 
 You'll need to do this if you want to cancel the action that has been
 queued up. You can cancel a pending action using a function called
-<b>clearTimeout</b>. This function takes one argument, which is a variable
-that has been assigned to the result of a <b>setTimeout</b> function:
+<span>clearTimeout</span>. This function takes one argument, which is a variable
+that has been assigned to the result of a <span>setTimeout</span> function:
 
 <pre>clearTimeout(variable)</pre>
 
-Let's update the <b>positionMessage</b> function so that it calls
+Let's update the <span>positionMessage</span> function so that it calls
 moveMessage after 5 seconds (5,000 milliseconds):
 
 <pre>
@@ -397,7 +385,7 @@ function positionMessage() {
 }
 </pre>
 
-The <b>positionMessage</b> function is called when the page loads:
+The <span>positionMessage</span> function is called when the page loads:
 
 <pre>addLoadEvent(positionMessage);</pre>
 
@@ -409,10 +397,10 @@ elapse, you could do so with this statement:
 
 <pre>clearTimeout(movement);</pre>
 
-The movement variable refers to the <b>setTimeout</b> function defined in
-<b>positionMessage</b>. It's a global variable; it wasn't declared with the
+The movement variable refers to the <span>setTimeout</span> function defined in
+<span>positionMessage</span>. It's a global variable; it wasn't declared with the
 var keyword. This means the action can be canceled outside the
-<b>positionMessage</b> function.
+<span>positionMessage</span> function.
 
 <h4>Incremental movement</h4>
 
@@ -421,7 +409,7 @@ sort of animation, albeit a very primitive one. Effective animation uses
 incremental movement. Moving from the starting position to the final
 location should happen in a series of steps rather than one quick jump.
 
-Let's update the <b>moveMessage</b> function so that movement occurs
+Let's update the <span>moveMessage</span> function so that movement occurs
 incrementally. Here's the logic behind the new function:
 
 1.  Get the element's current position.
@@ -435,22 +423,22 @@ incrementally. Here's the logic behind the new function:
 
 The first step is getting the element's current position. We can do this
 by querying properties of the element's style property. We want to find
-the left and top properties. We'll assign them to the variables <b>xpos</b>
-and <b>ypos</b>, respectively:
+the left and top properties. We'll assign them to the variables <span>xpos</span>
+and <span>ypos</span>, respectively:
 
 <pre>
 var xpos = elem.style.left;
 var ypos = elem.style.top;
 </pre>
 
-When the <b>moveMessage</b> function is called after the
-<b>positionMessage</b> function, <b>xpos</b> will have a value of &quot;50px&quot;.
-The <b>ypos</b> variable will have a value of &quot;100px&quot;. These values are
+When the <span>moveMessage</span> function is called after the
+<span>positionMessage</span> function, <span>xpos</span> will have a value of &quot;50px&quot;.
+The <span>ypos</span> variable will have a value of &quot;100px&quot;. These values are
 strings, which presents a bit of a problem. The next step in the
 function involves arithmetical comparison operators. We need to work
 with numbers, not strings.
 
-The JavaScript function <b>parseInt</b> can extract numeric information
+The JavaScript function <span>parseInt</span> can extract numeric information
 from a string. If you pass it a string that begins with a number, it
 will return the number:
 
@@ -462,33 +450,33 @@ Here's an example:
 
 That will return the number 39.
 
-The <b>parseInt</b> function will return whole numbers (integers). If you
+The <span>parseInt</span> function will return whole numbers (integers). If you
 need to extract numbers with decimal places (floating-point numbers),
-there is a corresponding <b>parseFloat</b> function:
+there is a corresponding <span>parseFloat</span> function:
 
 <pre>parseFloat(string)</pre>
 
-We're dealing with integers in the <b>moveMessage</b> function, so we'll
-use <b>parseInt</b>:
+We're dealing with integers in the <span>moveMessage</span> function, so we'll
+use <span>parseInt</span>:
 
 <pre>
 var xpos = parseInt(elem.style.left);
 var ypos = parseInt(elem.style.top);
 </pre>
 
-The <b>parseInt</b> function converts the string &quot;50px&quot; to the number 50.
-The string &quot;100px&quot; becomes the number 100. Now the <b>xpos</b> and
-<b>ypos</b> variables contain those numbers.
+The <span>parseInt</span> function converts the string &quot;50px&quot; to the number 50.
+The string &quot;100px&quot; becomes the number 100. Now the <span>xpos</span> and
+<span>ypos</span> variables contain those numbers.
 
-■ Note The use of the <b>parseInt</b> function shown here works only when
+■ Note The use of the <span>parseInt</span> function shown here works only when
 the elements have been assigned a position using a DOM script or the
 style property.
 
-The next few steps in the <b>moveMessage</b> function require the use of a
+The next few steps in the <span>moveMessage</span> function require the use of a
 lot of comparison operators.
 
 The first comparison is a test for equality. We want to find out if
-<b>xpos</b> is equal to the final left position and if <b>ypos</b> is equal to
+<span>xpos</span> is equal to the final left position and if <span>ypos</span> is equal to
 the final top position. If they are, we'll exit the function. We can do
 this test by using the comparison operator, which consists of two equal
 signs (remember that a single equal sign is used for assignment)
@@ -502,9 +490,9 @@ if (xpos == 200 && ypos == 100) {
 Everything after this line will be executed only if the message element
 has not reached its final position.
 
-Next, we'll update the <b>xpos</b> and <b>ypos</b> numbers based on their
+Next, we'll update the <span>xpos</span> and <span>ypos</span> numbers based on their
 relationship to the final position. We want to bring them both closer to
-the final coordinates. If the value of <b>xpos</b> is less than the final
+the final coordinates. If the value of <span>xpos</span> is less than the final
 left position, increase it by one:
 
 <pre>
@@ -521,7 +509,7 @@ if (xpos &gt; 200) {
 }
 </pre>
 
-The same applies for the relationship between the <b>ypos</b> variable and
+The same applies for the relationship between the <span>ypos</span> variable and
 the final top position:
 
 <pre>
@@ -533,11 +521,11 @@ if (ypos &gt; 100) {
 }
 </pre>
 
-You can see why we need <b>xpos</b> and <b>ypos</b> to be numbers rather than
+You can see why we need <span>xpos</span> and <span>ypos</span> to be numbers rather than
 strings. We're using the less-than and greater-than operators to compare
 numerical values and update the variables accordingly.
 
-Now we want to apply the <b>xpos</b> and <b>ypos</b> variables to the style
+Now we want to apply the <span>xpos</span> and <span>ypos</span> variables to the style
 property of the element. We do this by adding the string &quot;px&quot; to their
 values and applying them to the left and top properties:
 
@@ -590,7 +578,7 @@ more useful later in this chapter.
 
 <h4>Abstraction</h4>
 
-As it stands, the <b>moveMessage</b> function accomplishes a very specific
+As it stands, the <span>moveMessage</span> function accomplishes a very specific
 task. It moves a specific element to a specific place, pausing for a
 specific amount of time between movements. All of that information is
 hard-coded into the function:
@@ -625,12 +613,12 @@ function moveMessage() {
 </pre>
 
 If all of those things were variables, the function would be a lot more
-flexible. By abstracting the <b>moveMessage</b> function, you can create
+flexible. By abstracting the <span>moveMessage</span> function, you can create
 something more portable and reusable.
 
 <h4>Creating the moveElement function</h4>
 
-Call your new function moveElement. Unlike <b>moveMessage</b>, this
+Call your new function moveElement. Unlike <span>moveMessage</span>, this
 function will take a number of arguments.
 
 These are the things that you can vary each time you call the function:
@@ -653,12 +641,12 @@ These arguments should all have descriptive names:
 
 4.  <b>interval</b>
 
-Begin the <b>moveElement</b> function with these arguments:
+Begin the <span>moveElement</span> function with these arguments:
 
 <pre>function moveElement(elementID,final_x,final_y,interval) {</pre>
 
 Substitute these for the values that were previously hard-coded into
-<b>moveMessage</b>. The <b>moveMessage</b> function began with these lines:
+<span>moveMessage</span>. The <span>moveMessage</span> function began with these lines:
 
 <pre>
 if (!document.getElementById) return false;
@@ -666,8 +654,8 @@ if (!document.getElementById(&quot;message&quot;)) return false;
 var elem = document.getElementById(&quot;message&quot;);
 </pre>
 
-Replace all the instances of <b>getElementById(&quot;message&quot;)</b> with
-<b>getElementById(elementID):</b>
+Replace all the instances of <span>getElementById(&quot;message&quot;)</span> with
+<span>getElementById(elementID):</span>
 
 <pre>
 if (!document.getElementById) return false;
@@ -675,11 +663,11 @@ if (!document.getElementById(elementID)) return false;
 var elem = document.getElementById(elementID);
 </pre>
 
-The variable <b>elem</b> now refers to whichever element you want to move.
+The variable <span>elem</span> now refers to whichever element you want to move.
 
 The next step of the function remains the same. The left and top
 properties of the element are converted to numbers and assigned to the
-variables <b>xpos</b> and <b>ypos</b>, respectively:
+variables <span>xpos</span> and <span>ypos</span>, respectively:
 
 <pre>
 var xpos = parseInt(elem.style.left);
@@ -687,7 +675,7 @@ var ypos = parseInt(elem.style.top);
 </pre>
 
 Next, check to see if the element has reached its final position. In
-<b>moveMessage</b>, these coordinates were the values 200 (for the left
+<span>moveMessage</span>, these coordinates were the values 200 (for the left
 position) and 100 (for the top position):
 
 <pre>
@@ -696,8 +684,8 @@ if (xpos == 200 && ypos == 100) {
 }
 </pre>
 
-In <b>moveElement</b>, these coordinates are provided by the arguments
-<b>final_x</b> and <b>final_y</b>:
+In <span>moveElement</span>, these coordinates are provided by the arguments
+<span>final_x</span> and <span>final_y</span>:
 
 <pre>
 if (xpos == final_x && ypos == final_y) {
@@ -705,7 +693,7 @@ if (xpos == final_x && ypos == final_y) {
 }
 </pre>
 
-Update the values of the <b>xpos</b> and <b>ypos</b> variables. If <b>xpos</b> is
+Update the values of the <span>xpos</span> and <span>ypos</span> variables. If <span>xpos</span> is
 less than the final left position, increase its value by one.
 
 The final left position used to be hard-coded as 200:
@@ -716,7 +704,7 @@ if (xpos &lt; 200) {
 }
 </pre>
 
-Now the final left position is contained in the <b>final_x</b> argument:
+Now the final left position is contained in the <span>final_x</span> argument:
 
 <pre>
 if (xpos &lt; final_x) {
@@ -724,8 +712,8 @@ if (xpos &lt; final_x) {
 }
 </pre>
 
-Likewise, if the value of <b>xpos</b> is greater than the final left
-position, decrease the value of <b>xpos</b> by one:
+Likewise, if the value of <span>xpos</span> is greater than the final left
+position, decrease the value of <span>xpos</span> by one:
 
 <pre>
 if (xpos &gt; final_x) {
@@ -733,8 +721,8 @@ if (xpos &gt; final_x) {
 }
 </pre>
 
-Do the same for <b>ypos</b>. If its value is less than <b>final_y</b>,
-increase it by one. If it is greater than <b>final_y</b>, decrease it by
+Do the same for <span>ypos</span>. If its value is less than <span>final_y</span>,
+increase it by one. If it is greater than <span>final_y</span>, decrease it by
 one:
 
 <pre>
@@ -747,9 +735,9 @@ if (ypos &gt; final_y) {
 </pre>
 
 The next step remains the same. Update the left and top style properties
-of the element <b>elem</b>.
+of the element <span>elem</span>.
 
-Assign the values of <b>xpos</b> and <b>ypos</b> with the string &quot;px&quot; attached:
+Assign the values of <span>xpos</span> and <span>ypos</span> with the string &quot;px&quot; attached:
 
 <pre>
 elem.style.left = xpos + &quot;px&quot;;
@@ -757,29 +745,29 @@ elem.style.top = ypos + &quot;px&quot;;
 </pre>
 
 Finally, we want to call the function again after a suitable interval.
-In <b>moveMessage</b>, this was quite straightforward. The <b>moveMessage</b>
+In <span>moveMessage</span>, this was quite straightforward. The <span>moveMessage</span>
 function is called after ten milliseconds:
 
 <pre>movement = setTimeout(&quot;moveMessage()&quot;,10);</pre>
 
-In <b>moveElement</b>, it gets a little trickier. As well as calling the
-function again, we need to pass it the same arguments: <b>elementID</b>,
-<b>final_x</b>, <b>final_y</b>, and <b>interval</b>. The whole thing needs to be
+In <span>moveElement</span>, it gets a little trickier. As well as calling the
+function again, we need to pass it the same arguments: <span>elementID</span>,
+<span>final_x</span>, <span>final_y</span>, and <span>interval</span>. The whole thing needs to be
 contained as a string:
 
 <pre>&quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;</pre>
 
 That's a lot of concatenating! Rather than inserting that long string
-directly into the <b>setTimeout</b> function, assign the string to a
-variable called <b>repeat</b>:
+directly into the <span>setTimeout</span> function, assign the string to a
+variable called <span>repeat</span>:
 
 <pre>
 var repeat =
 &quot;moveElement(&#39;&quot;+elementID+&quot;&#39;,&quot;+final_x+&quot;,&quot;+final_y+&quot;,&quot;+interval+&quot;)&quot;;
 </pre>
 
-Now we can simply insert <b>repeat</b> as the first argument of the
-<b>setTimeout</b> function. The second argument is the length of the pause
+Now we can simply insert <span>repeat</span> as the first argument of the
+<span>setTimeout</span> function. The second argument is the length of the pause
 before the first argument is called. This used to be hard-coded as ten
 milliseconds. Now it's whatever value is contained by the variable
 interval:
@@ -822,16 +810,16 @@ function moveElement(elementID,final_x,final_y,interval) {
 }
 </pre>
 
-Save the <b>moveElement</b> function to a file called <b>moveElement.js</b>.
-Place this file in a folder called <b>scripts</b>, along with that old
-workhorse, <b>addLoadEvent.js</b>.
+Save the <span>moveElement</span> function to a file called <span>moveElement.js</span>.
+Place this file in a folder called <span>scripts</span>, along with that old
+workhorse, <span>addLoadEvent.js</span>.
 
 <h4>Using the moveElement function</h4>
 
 Let's take this function for a test drive.
 
 Start by re-creating the previous example. Create a document called
-<b>message.html</b>, which contains a paragraph identified as &quot;message&quot;:
+<span>message.html</span>, which contains a paragraph identified as &quot;message&quot;:
 
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -847,8 +835,8 @@ Start by re-creating the previous example. Create a document called
 </pre>
 
 Before we can animate the message, we need to position it. Write another
-JavaScript file called <b>positionMessage.js</b>. At the end of the
-<b>positionMessage</b> function, call the <b>moveElement</b> function:
+JavaScript file called <span>positionMessage.js</span>. At the end of the
+<span>positionMessage</span> function, call the <span>moveElement</span> function:
 
 <pre>
 function positionMessage() {
@@ -863,13 +851,13 @@ function positionMessage() {
 addLoadEvent(positionMessage);
 </pre>
 
-We are passing the string &quot;message&quot; as the value of the <b>elementID</b>
-argument. The <b>final_x</b> argument is 200. The <b>final_y</b> argument is
-100. The value of <b>interval</b> is 10.
+We are passing the string &quot;message&quot; as the value of the <span>elementID</span>
+argument. The <span>final_x</span> argument is 200. The <span>final_y</span> argument is
+100. The value of <span>interval</span> is 10.
 
-Now you have three files in your scripts folder: <b>addLoadEvent.js</b>,
-<b>positionMessage.js</b>, and <b>moveElement.js</b>. Reference those files
-from <b>message.html</b> using <b>&lt;script&gt;</b> tags:
+Now you have three files in your scripts folder: <span>addLoadEvent.js</span>,
+<span>positionMessage.js</span>, and <span>moveElement.js</span>. Reference those files
+from <span>message.html</span> using <span>&lt;script&gt;</span> tags:
 
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -887,22 +875,22 @@ from <b>message.html</b> using <b>&lt;script&gt;</b> tags:
 &lt;/html&gt;
 </pre>
 
-Load <b>message.html</b> in a web browser to see the animation in action.
+Load <span>message.html</span> in a web browser to see the animation in action.
 The element moves horizontally across the screen.
 
 ![](./images/image003.png){width="4.0in" height="2.164656605424322in"}
 
-So far, so good. The <b>moveElement</b> function is working exactly like
-the <b>moveMessage</b> function. You abstracted the function so that you
+So far, so good. The <span>moveElement</span> function is working exactly like
+the <span>moveMessage</span> function. You abstracted the function so that you
 could send it any arguments you like. By altering the values of
-<b>final_x</b> and <b>final_y</b>, you can change the direction of the
+<span>final_x</span> and <span>final_y</span>, you can change the direction of the
 animation. Altering the value of interval changes the speed of the
 animation:
 
 <pre>function moveElement(elementID,final_x,final_y,interval)</pre>
 
-Update the last line of the <b>positionMessage</b> function in
-<b>positionMessage.js</b> so that these three values are changed
+Update the last line of the <span>positionMessage</span> function in
+<span>positionMessage.js</span> so that these three values are changed
 
 <pre>
 function positionMessage() {
@@ -1314,14 +1302,14 @@ function. The behaviors are attached when the page loads.
 
 addLoadEvent(prepareSlideshow);
 
-Save the <b>prepareSlideshow</b> function to a file called
-<b>prepareSlideshow.js</b> in a folder called <b>scripts</b>.
+Save the <span>prepareSlideshow</span> function to a file called
+<span>prepareSlideshow.js</span> in a folder called <span>scripts</span>.
 
-Place the <b>moveElement.js</b> and <b>addLoadEvent.js</b> files in the same
+Place the <span>moveElement.js</span> and <span>addLoadEvent.js</span> files in the same
 folder.
 
-We can reference all three scripts from <b>list.html</b> by adding
-<b>&lt;script&gt;</b> tags immediately before the closing <b>&lt;/body&gt;</b> tag:
+We can reference all three scripts from <span>list.html</span> by adding
+<span>&lt;script&gt;</span> tags immediately before the closing <span>&lt;/body&gt;</span> tag:
 
 <pre>
 &lt;!DOCTYPE html&gt;
@@ -1351,23 +1339,23 @@ We can reference all three scripts from <b>list.html</b> by adding
 &lt;/html&gt;
 </pre>
 
-Load <b>list.html</b> in a web browser. Hover over one of the links in the
+Load <span>list.html</span> in a web browser. Hover over one of the links in the
 list to see the slideshow in action.
 
 ![](./images/image010.png){width="4.0in" height="3.1860312773403323in"}
 
 Depending on which link in the list you hover over, a different portion
-of the <b>topics.gif</b> image will slide into view.
+of the <span>topics.gif</span> image will slide into view.
 
 But something is not quite right. If you move quickly from link to the
 link, the animation becomes confused. There's something wrong with the
-<b>moveElement</b> function.
+<span>moveElement</span> function.
 
 <h4>A question of scope</h4>
 
 The animation problem is being caused by a global variable. When we
-abstracted the <b>moveMessage</b> function and turned it into the
-<b>moveElement</b> function, we left the variable movement as it was:
+abstracted the <span>moveMessage</span> function and turned it into the
+<span>moveElement</span> function, we left the variable movement as it was:
 
 <pre>
 function moveElement(elementID,final_x,final_y,interval) {
@@ -1399,17 +1387,17 @@ function moveElement(elementID,final_x,final_y,interval) {
 }
 </pre>
 
-This is causing a problem now that the <b>moveElement</b> function is being
+This is causing a problem now that the <span>moveElement</span> function is being
 called whenever the user hovers over a link. Regardless of whether or
 not the previous call to the function has finished moving the image, the
 function is being asked to move the same element somewhere else. In
-other words, the <b>moveElement</b> function is attempting to move the same
+other words, the <span>moveElement</span> function is attempting to move the same
 element to two different places at once, and the movement variable has
 become the rope in a tug of war.
 
 As the user quickly moves from link to link, there is a backlog of
-events building up in the <b>setTimeout</b> queue. We can flush out this
-backlog by using <b>clearTimeout</b>:
+events building up in the <span>setTimeout</span> queue. We can flush out this
+backlog by using <span>clearTimeout</span>:
 
 <pre>clearTimeout(movement);</pre>
 
@@ -1418,7 +1406,7 @@ get an error. We can't use a local variable:
 
 <pre>var movement = setTimeout(repeat,interval);</pre>
 
-If we do that, the <b>clearTimeout</b> statement won't work; the movement
+If we do that, the <span>clearTimeout</span> statement won't work; the movement
 variable will no longer exist. We can't use a global variable.
 
 We can't use a local variable. We need something in between. We need a
@@ -1428,13 +1416,13 @@ Element-specific variables do exist. In fact, we've been using them all
 the time. What I've just described is a property.
 
 Until now, we've used properties provided by the DOM:
-<b>element.firstChild</b>, <b>element.style</b>, and so on. You can also
+<span>element.firstChild</span>, <span>element.style</span>, and so on. You can also
 assign your own properties:
 
 <pre>element.property = value</pre>
 
-If you wanted, you could create a property called <b>foo</b> with a value
-of <b>&quot;bar&quot;:</b>
+If you wanted, you could create a property called <span>foo</span> with a value
+of <span>&quot;bar&quot;:</span>
 
 <pre>element.foo = &quot;bar&quot;;</pre>
 
@@ -1442,10 +1430,10 @@ It's just like creating a variable. The difference is that the variable
 belongs just to that element.
 
 Let's change movement from being a global variable to a property of the
-element being moved, <b>elem</b>.
+element being moved, <span>elem</span>.
 
 That way, we can test for its existence and, if it exists, use
-<b>clearTimeout</b>.
+<span>clearTimeout</span>.
 
 <pre>
 function moveElement(elementID,final_x,final_y,interval) {
@@ -1480,26 +1468,26 @@ function moveElement(elementID,final_x,final_y,interval) {
 }
 </pre>
 
-Whichever element is currently being moved by the <b>moveElement</b>
-function is assigned a property called <b>movement</b>. If the element
+Whichever element is currently being moved by the <span>moveElement</span>
+function is assigned a property called <span>movement</span>. If the element
 already has this property at the start of the function, it is reset
-using <b>clearTimeout</b>. This means that even if the same element is
+using <span>clearTimeout</span>. This means that even if the same element is
 being told to move in different directions, there is only ever one
-<b>setTimeout</b> statement.
+<span>setTimeout</span> statement.
 
-Reload <b>list.html.</b> Moving quickly from link to link no longer creates
+Reload <span>list.html.</span> Moving quickly from link to link no longer creates
 a problem. There is no backlog of events being queued up. The animation
 changes direction as you move up and down the list of links. Still, the
 animation is a bit lackluster.
 
 <h4>Refining the animation</h4>
 
-The <b>moveElement</b> function moves an element one pixel at a time until
-it reaches the coordinates specified by the <b>final_x</b> and <b>final_y</b>
+The <span>moveElement</span> function moves an element one pixel at a time until
+it reaches the coordinates specified by the <span>final_x</span> and <span>final_y</span>
 arguments. The movement is smooth, but it's also kind of boring. Let's
 spice up the animation a bit.
 
-Take a look at this simple bit of code in <b>moveElement.js</b>:
+Take a look at this simple bit of code in <span>moveElement.js</span>:
 
 <pre>
 if (xpos &lt; final_x) {
@@ -1507,10 +1495,10 @@ if (xpos &lt; final_x) {
 }
 </pre>
 
-The variable <b>xpos</b> is the element's current left position. The
-variable <b>final_x</b> is the element's final left position. This piece of
-code states, "If the variable <b>xpos</b> is less than the variable
-<b>final_x</b>, increase the value of <b>xpos</b> by one." No matter how far
+The variable <span>xpos</span> is the element's current left position. The
+variable <span>final_x</span> is the element's final left position. This piece of
+code states, "If the variable <span>xpos</span> is less than the variable
+<span>final_x</span>, increase the value of <span>xpos</span> by one." No matter how far
 away the element is from its final position, it will always move toward
 it one pixel at a time. To add some interest, we'll change that.
 
@@ -1519,9 +1507,9 @@ large distance. If the element is near to its final position, we want it
 to move a short distance.
 
 First, we need to figure out how far the element is from its final
-destination. If xpos is less than <b>final_x</b>, we want to know by how
-much. We can find out by subtracting <b>xpos</b>, the current left
-position, from <b>final_x</b>, the desired left position:
+destination. If xpos is less than <span>final_x</span>, we want to know by how
+much. We can find out by subtracting <span>xpos</span>, the current left
+position, from <span>final_x</span>, the desired left position:
 
 <pre>dist = final_x - xpos;</pre>
 
@@ -1537,37 +1525,37 @@ This will move the element one-tenth of the distance it needs to go.
 I've chosen one-tenth as a nice round fraction. You can try other values
 if you like,
 
-If <b>xpos</b> is 500 pixels away from <b>final_x</b>, the variable <b>dist</b>
-will have a value of 50. The value of <b>xpos</b> is increased by 50. If
-<b>xpos</b> is 100 pixels less than <b>final_x</b>, <b>xpos</b> is increased by
+If <span>xpos</span> is 500 pixels away from <span>final_x</span>, the variable <span>dist</span>
+will have a value of 50. The value of <span>xpos</span> is increased by 50. If
+<span>xpos</span> is 100 pixels less than <span>final_x</span>, <span>xpos</span> is increased by
 ten.
 
-A problem occurs when the distance between <b>xpos</b> and <b>final_x</b> is
+A problem occurs when the distance between <span>xpos</span> and <span>final_x</span> is
 less than ten. When that value is divided by ten, the result will be
 less than one. You can't move an element by less than one pixel.
 
-Using the <b>ceil</b> property of the <b>Math</b> object, you can <b>round</b> up
-the value of the variable dist. The <b>ceil</b> property has the following
+Using the <span>ceil</span> property of the <span>Math</span> object, you can <span>round</span> up
+the value of the variable dist. The <span>ceil</span> property has the following
 syntax:
 
 <pre>Math.ceil(number)</pre>
 
-This will <b>round</b> up any floating-point number to the nearest integer.
-There is a corresponding <b>floor</b> property that will <b>round</b> any
-floating-point number down to the nearest integer. The <b>round</b>
+This will <span>round</span> up any floating-point number to the nearest integer.
+There is a corresponding <span>floor</span> property that will <span>round</span> any
+floating-point number down to the nearest integer. The <span>round</span>
 property will round any floating-point number to whichever whole number
 is closest:
 
 <pre>
 Math.floor(number)
 Math.round(number)
-For the <b>moveElement</b> function, we'll round upward. If we used floor
+For the <span>moveElement</span> function, we'll round upward. If we used floor
 or round, the element might never reach its final destination.
 dist = Match.ceil((final_x - xpos)/10);
 xpos = xpos + dist;
 </pre>
 
-This covers the situation when <b>xpos</b> is less than <b>final_x</b>:
+This covers the situation when <span>xpos</span> is less than <span>final_x</span>:
 
 <pre>
 if (xpos &lt; final_x) {
@@ -1576,12 +1564,12 @@ xpos = xpos + dist;
 }
 </pre>
 
-If <b>xpos</b> is greater than <b>final_x</b>, then the distance to travel is
-calculated by subtracting <b>final_x</b> from <b>xpos</b>. This value is
+If <span>xpos</span> is greater than <span>final_x</span>, then the distance to travel is
+calculated by subtracting <span>final_x</span> from <span>xpos</span>. This value is
 divided by ten and rounded up to the nearest whole number to give the
-variable <b>dist</b>.
+variable <span>dist</span>.
 
-This is then subtracted from <b>xpos</b> to bring the element closer to its
+This is then subtracted from <span>xpos</span> to bring the element closer to its
 final destination.
 
 <pre>
@@ -1591,7 +1579,7 @@ xpos = xpos - dist;
 }
 </pre>
 
-The same logic applies for <b>ypos</b> and <b>final_y:</b>
+The same logic applies for <span>ypos</span> and <span>final_y:</span>
 
 <pre>
 if (ypos &lt; final_y) {
@@ -1604,8 +1592,8 @@ if (ypos &gt; final_y) {
 }
 </pre>
 
-For good measure, don't forget to declare the <b>dist</b> variable
-alongside <b>xpos</b> and <b>ypos</b>:
+For good measure, don't forget to declare the <span>dist</span> variable
+alongside <span>xpos</span> and <span>ypos</span>:
 
 <pre>
 var xpos = parseInt(elem.style.left);
@@ -1613,7 +1601,7 @@ var ypos = parseInt(elem.style.top);
 var dist = 0;
 </pre>
 
-The updated <b>moveElement</b> function looks like this:
+The updated <span>moveElement</span> function looks like this:
 
 <pre>
 function moveElement(elementID,final_x,final_y,interval) {
@@ -1653,14 +1641,14 @@ function moveElement(elementID,final_x,final_y,interval) {
 }
 </pre>
 
-Save these changes to <b>moveElement.js</b>. Reload <b>list.html</b> to see
+Save these changes to <span>moveElement.js</span>. Reload <span>list.html</span> to see
 the difference.
 
 ![](./images/image011.png){width="4.0in" height="3.1889949693788275in"}
 
 The animation now feels much smoother and snappier. When you first hover
 over a link, the image jumps quite a distance. As the image approaches
-its final destination, it <b>"eases"</b> into place.
+its final destination, it <span>"eases"</span> into place.
 
 The markup, the CSS, and the JavaScript all come together to create this
 slideshow effect. Everything is working fine, but there's always room
@@ -1668,7 +1656,7 @@ for some small tweaks.
 
 <h4>Adding a safety check</h4>
 
-The <b>moveElement</b> function is working really well now. There's just
+The <span>moveElement</span> function is working really well now. There's just
 one thing that bothers me. There is an assumption being made near the
 start of the function:
 
@@ -1677,12 +1665,11 @@ var xpos = parseInt(elem.style.left);
 var ypos = parseInt(elem.style.top);
 </pre>
 
-It's assuming that the element elem has a left style property and a top
-style property. We should really check to make sure that this is the
-case.
+It's assuming that the element <span>elem</span> has a left style property and a top style property. 
+We should really check to make sure that this is the case.
 
-If the left or top properties haven't been set, we have a couple of
-options. We could simply exit the function there and then:
+If the left or top properties haven't been set, we have a couple of options. We could simply exit 
+the function there and then:
 
 <pre>
 if (!elem.style.left &#124;&#124; !elem.style.top) {
@@ -1690,12 +1677,10 @@ if (!elem.style.left &#124;&#124; !elem.style.top) {
 }
 </pre>
 
-If JavaScript can't read those properties, then the function stops
-without throwing up an error message.
+If JavaScript can't read those properties, then the function stops without throwing up an error message.
 
-Another solution is to apply default left and top properties in the
-<b>moveElement</b> function. If either property hasn't been set, we can
-give them a default value of &quot;0px&quot;:
+Another solution is to apply default left and top properties in the <span>moveElement</span> function. If 
+either property hasn't been set, we can give them a default value of &quot;0px&quot;:
 
 <pre>
 if (!elem.style.left) {
@@ -1706,7 +1691,7 @@ if (!elem.style.top) {
 }
 </pre>
 
-The <b>moveElement</b> function now looks like this:
+The <span>moveElement</span> function now looks like this:
 
 <pre>
 function moveElement(elementID,final_x,final_y,interval) {
@@ -1753,19 +1738,19 @@ function moveElement(elementID,final_x,final_y,interval) {
 </pre>
 
 With that safety check in place, we no longer need to explicitly set the
-position of the <b>&quot;preview&quot;</b> element. Right now, we're doing that in
-the <b>prepareSlideshow</b> function. Remove these lines:
+position of the <span>&quot;preview&quot;</span> element. Right now, we're doing that in
+the <span>prepareSlideshow</span> function. Remove these lines:
 
 <pre>
 preview.style.left = &quot;0px&quot;;
 preview.style.top = &quot;0px&quot;;
 </pre>
 
-While we're at it, let's overhaul the <b>prepareSlideshow</b> function.
+While we're at it, let's overhaul the <span>prepareSlideshow</span> function.
 
 <h4>Generating markup</h4>
 
-The <b>list.html</b> document contains some markup that exists just for the
+The <span>list.html</span> document contains some markup that exists just for the
 JavaScript slideshow:
 
 <pre>
@@ -1776,10 +1761,10 @@ id=&quot;preview&quot; /&gt;
 </pre>
 
 If the user doesn't have JavaScript enabled, this content is somewhat
-superfluous. The <b>div</b> and the <b>img</b> element are there purely for
+superfluous. The <span>div</span> and the <span>img</span> element are there purely for
 the slideshow effect. Instead of hard-coding these elements into the
 document, it makes sense to use JavaScript to generate them. Let's do
-that in <b>prepareSlideshow.js</b>.
+that in <span>prepareSlideshow.js</span>.
 
 <h4>First, create the div element:</h4>
 
@@ -1788,7 +1773,7 @@ var slideshow = document.createElement(&quot;div&quot;);
 slideshow.setAttribute(&quot;id&quot;,&quot;slideshow&quot;);
 </pre>
 
-<h4>Next, create the <b>img</b> element:</h4>
+<h4>Next, create the <span>img</span> element:</h4>
 
 <pre>
 var preview = document.createElement(&quot;img&quot;);
@@ -1797,12 +1782,12 @@ preview.setAttribute(&quot;alt&quot;,&quot;building blocks of web design&quot;);
 preview.setAttribute(&quot;id&quot;,&quot;preview&quot;);
 </pre>
 
-<h4>Place the <b>img</b> inside the <b>div</b>:</h4>
+<h4>Place the <span>img</span> inside the <span>div</span>:</h4>
 
 <pre>slideshow.appendChild(preview);</pre>
 
 Finally, we want these newly created elements to appear directly after
-the list of links. For this, we'll use the <b>insertAfter</b> function from
+the list of links. For this, we'll use the <span>insertAfter</span> function from
 Chapter 7:
 
 <pre>
@@ -1810,7 +1795,7 @@ var list = document.getElementById(&quot;linklist&quot;);
 insertAfter(slideshow,list);
 </pre>
 
-The finished <b>prepareSlideshow</b> function looks like this:
+The finished <span>prepareSlideshow</span> function looks like this:
 
 <pre>
 function prepareSlideshow() {
@@ -1873,8 +1858,8 @@ include one more set of &lt;script&gt; tags to reference the insertAfter.js file
 &lt;/html&gt;
 </pre>
 
-Write the <b>insertAfter</b> function to a file called <b>insertAfter.js</b>
-and place it in the <b>scripts</b> folder:
+Write the <span>insertAfter</span> function to a file called <span>insertAfter.js</span>
+and place it in the <span>scripts</span> folder:
 
 <pre>
 function insertAfter(newElement,targetElement) {
@@ -1887,8 +1872,8 @@ function insertAfter(newElement,targetElement) {
 }
 </pre>
 
-The other file we need to update is the style sheet, <b>layout.css</b>.
-Remove this line from <b>prepareSlideshow.js</b>:
+The other file we need to update is the style sheet, <span>layout.css</span>.
+Remove this line from <span>prepareSlideshow.js</span>:
 
 <pre>preview.style.position = &quot;absolute&quot;;</pre>
 
@@ -1922,24 +1907,25 @@ the slideshow, you could do that by editing layout.css. You could float
 the two elements side by side. You could also place a border around the
 slideshow if you wanted it to stand out more.
 
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1.2
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1.3
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1.4
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1.5
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 1.6
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Module 2:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 About the DOM (0:46)
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Module 3:
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 What is jQuery? (5:01)
-
+<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 Thank you. 
 
 The end...
